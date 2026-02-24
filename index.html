@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Dictionary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-glow"></div>
+    <header class="top-bar glass">
+      <div id="progressTracker" class="progress-text">0 of 0 terms explored</div>
+      <div class="header-actions">
+        <button id="randomBtn" class="btn btn-secondary" type="button">🎲 Random Term</button>
+        <button id="themeToggle" class="btn btn-primary" type="button" aria-label="Toggle dark mode">
+          <span id="themeLabel">🌙 Dark</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero glass">
+        <p class="eyebrow">Glossary</p>
+        <h1>AI Dictionary</h1>
+        <p class="subtitle">Your guide to understanding Artificial Intelligence</p>
+      </section>
+
+      <section class="controls glass">
+        <div class="search-wrap">
+          <input
+            id="searchInput"
+            type="search"
+            placeholder="Search terms, definitions, or categories..."
+            aria-label="Search AI terms"
+          />
+        </div>
+        <div id="categoryFilters" class="category-filters" aria-label="Category filters"></div>
+      </section>
+
+      <section id="cardsGrid" class="cards-grid" aria-live="polite"></section>
+      <p id="emptyState" class="empty hidden">No terms found. Try another search or category.</p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
