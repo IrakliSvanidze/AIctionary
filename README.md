@@ -1,0 +1,2 @@
+# AIctionary
+AI glossary/dictionary
