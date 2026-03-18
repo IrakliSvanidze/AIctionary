@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI ლექსიკონი</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-glow"></div>
+    <header class="top-bar glass">
+      <div id="progressTracker" class="progress-text">0 / 0 ტერმინი ნანახია</div>
+      <div class="header-actions">
+        <button id="randomBtn" class="btn btn-secondary" type="button">🎲 შემთხვევითი ტერმინი</button>
+        <button id="themeToggle" class="btn btn-primary" type="button" aria-label="თემის გადართვა">
+          <span id="themeLabel">🌙 მუქი</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero glass">
+        <p class="eyebrow">ტერმინების ბაზა</p>
+        <h1>AI ლექსიკონი</h1>
+        <p class="subtitle">თქვენი გზამკვლევი ხელოვნური ინტელექტის გასაგებად</p>
+      </section>
+
+      <section class="controls glass">
+        <div class="search-wrap">
+          <input
+            id="searchInput"
+            type="search"
+            placeholder="მოძებნეთ ტერმინი, განმარტება ან კატეგორია..."
+            aria-label="AI ტერმინების ძიება"
+          />
+        </div>
+        <div id="categoryFilters" class="category-filters" aria-label="კატეგორიების ფილტრები"></div>
+      </section>
+
+      <section id="cardsGrid" class="cards-grid" aria-live="polite"></section>
+      <p id="emptyState" class="empty hidden">ვერ მოიძებნა შესაბამისი ტერმინი. სცადეთ სხვა სიტყვა ან კატეგორია.</p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
