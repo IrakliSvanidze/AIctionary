@@ -17,6 +17,10 @@
     <header class="top-bar glass">
       <div id="progressTracker" class="progress-text">0 of 0 terms explored</div>
       <div class="header-actions">
+        <div class="lang-selector">
+          <button class="lang-btn active" data-lang="en" type="button">EN</button>
+          <button class="lang-btn" data-lang="geo" type="button">GEO</button>
+        </div>
         <button id="randomBtn" class="btn btn-secondary" type="button">🎲 Random Term</button>
         <button id="themeToggle" class="btn btn-primary" type="button" aria-label="Toggle dark mode">
           <span id="themeLabel">🌙 Dark</span>
@@ -26,9 +30,9 @@
 
     <main class="container">
       <section class="hero glass">
-        <p class="eyebrow">Glossary</p>
-        <h1>AI Dictionary</h1>
-        <p class="subtitle">Your guide to understanding Artificial Intelligence</p>
+        <p id="heroEyebrow" class="eyebrow">Glossary</p>
+        <h1 id="heroTitle">AI Dictionary</h1>
+        <p id="heroSubtitle" class="subtitle">Your guide to understanding Artificial Intelligence</p>
       </section>
 
       <section class="controls glass">

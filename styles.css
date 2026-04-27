@@ -83,7 +83,39 @@ body {
 
 .header-actions {
   display: flex;
+  align-items: center;
   gap: 0.6rem;
+}
+
+.lang-selector {
+  display: flex;
+  gap: 0.25rem;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.2rem;
+}
+
+.lang-btn {
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  border-radius: 999px;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  letter-spacing: 0.04em;
+}
+
+.lang-btn.active {
+  background: linear-gradient(120deg, var(--accent), var(--accent-2));
+  color: #fff;
+}
+
+.lang-btn:not(.active):hover {
+  color: var(--text);
 }
 
 .btn {
@@ -298,6 +330,11 @@ body {
 
   .header-actions {
     width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .lang-selector {
+    flex-shrink: 0;
   }
 
   .btn {
